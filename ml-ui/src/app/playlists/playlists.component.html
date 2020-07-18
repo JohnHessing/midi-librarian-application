@@ -1,0 +1,49 @@
+<div style="float: left">
+    <h4>Choose playlist</h4>
+    <ul class="playlists">
+        <li *ngFor="let playList of playListsHolder?.playLists" (click)="this.activatePlayList(''+playList.nr+'')">
+            <span class="badge">{{playList.nr}}</span>
+            {{playList.name}}
+            <span *ngIf="playList.isActive"> &#x2192;</span>
+        </li>
+    </ul>
+</div>
+
+<div style="float: left">
+    <h4>Songs</h4>
+    <ul class="songs">
+        <div class="warn" *ngIf="this.activePlayList === undefined">&#x2190; Choose a playlist</div>
+        <li *ngFor="let playListItem of this.activePlayList?.playListItems" (click)="this.activatePlayListItem(''+playListItem.nr+'')">
+            <span class="badge">{{playListItem.nr}}</span>
+            <span *ngIf="playListItem?.hasFocus">&#9658;</span>
+            {{playListItem.name}}
+            <span *ngIf="playListItem?.isActive && !playListItem?.isPlaying">&#x2705;</span>
+            <span *ngIf="playListItem?.isPlaying">&#x231B;</span>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="this.activePlayListItem !== undefined" style="float: left">
+
+    <ckeditor
+            [(ngModel)]="content"
+            [config]="config"
+            [readonly]="false"
+            debounce="500">
+    </ckeditor>
+
+    <span style="position: absolute; top: 15px; left: 960px">
+        <a class="cke_button cke_button__save cke_button_off" (click)="onSave($event)" title="Save" tabindex="-1"
+               hidefocus="true" role="button" aria-haspopup="false">
+          <span class="cke_button_icon cke_button__save_icon"
+               style="background-image:url('https://cdn.ckeditor.com/4.5.11/full-all/plugins/icons_hidpi.png?t=G87E');
+               background-position:0 -1800px;background-size:16px;">&nbsp;
+          </span>
+          <span class="cke_button_label cke_button__save_label" aria-hidden="false">
+              Save
+          </span>
+        </a>
+        <span *ngIf="this.fileIsSaving">&#x231B;</span>
+    </span>
+
+</div>
