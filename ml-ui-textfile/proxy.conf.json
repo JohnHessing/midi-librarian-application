@@ -1,0 +1,10 @@
+{
+  "/ml/currentTextFile/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "/ml/playlists/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/ml/sendFile/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/ml/textFile/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/ml/saveTextFile/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
