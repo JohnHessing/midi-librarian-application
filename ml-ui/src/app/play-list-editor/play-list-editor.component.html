@@ -1,0 +1,29 @@
+<button class="btn btn-primary w-100 btn-block"><a style="text-decoration: none" routerLink="/home" routerLinkActive="active">Terug</a></button>
+&nbsp;
+&nbsp;
+&nbsp;
+<button class="btn btn-primary w-100 btn-block" (click)="savePlayLists();">Wijzigingen opslaan</button>
+&nbsp;
+&nbsp;
+<label *ngIf="this.hasSyntaxError" class="btn btn-primary w-100 btn-block">Syntax error, file is not saved</label>
+<label *ngIf="!this.hasSyntaxError && this.isSaved" class="btn btn-primary w-100 btn-block">File is saved</label>
+
+<br />
+<br />
+
+<div class="form-group mt-3" style="position: relative; left: 30px;">
+
+  <label for="jsonPlayLists">Playlists definitie</label>
+
+  <br />
+  <br />
+
+  <textarea id="jsonPlayLists"
+            class="form-control" tabindex="1"
+            [(ngModel)]="this.jsonPlayListsDefinitie"
+            style="width:700px; height: 1000px; background-color: #EEEEEE"
+  >
+  </textarea>
+
+
+</div>
