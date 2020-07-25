@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {EventBusService} from '../services/event-bus.service';
 
 @Component({
-  selector: 'app-text-editor',
+  selector: 'app-text-listener',
   template: `
   <ckeditor
     [(ngModel)]="content"
@@ -12,7 +12,7 @@ import {EventBusService} from '../services/event-bus.service';
   </ckeditor>
   `,
 })
-export class TextEditorComponent implements OnInit {
+export class TextListenerComponent implements OnInit {
 
   content = '';
 
@@ -38,14 +38,6 @@ export class TextEditorComponent implements OnInit {
       this.content = result.fileContents;
     });
 
-
-    this.eventBusService.TellEditorToSave.subscribe(
-      (request) => {
-          console.log('I will save ' + this.content);
-          request.fileContents = this.content;
-          this.eventBusService.ReadyForSave.next(request);
-      }
-    );
   }
 
 }
