@@ -30,5 +30,21 @@
     },
     "secure": false,
     "logLevel": "debug"
+  },
+  "/ml/localIP/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/ml/savePlayListsFile/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
   }
 }

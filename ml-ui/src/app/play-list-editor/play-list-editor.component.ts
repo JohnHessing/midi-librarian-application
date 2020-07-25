@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {PlayListsService} from "../services/playlists-service";
-import {PlayListsHolder} from "../playlists/playlists.model";
+import {PlayListsHolder, PlayListsSaveRequest} from "../playlists/playlists.model";
 import {ValidationErrors} from "@angular/forms";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-play-list-editor',
@@ -15,7 +16,8 @@ export class PlayListEditorComponent implements OnInit {
   hasSyntaxError = false;
   isSaved = false;
 
-  constructor(private readonly playListsService: PlayListsService) {
+  constructor(private readonly playListsService: PlayListsService,
+              private readonly httpClient: HttpClient) {
   }
 
   ngOnInit(): void {
@@ -34,7 +36,13 @@ export class PlayListEditorComponent implements OnInit {
 
     try {
       this.isSaved = true;
-      let testObject: PlayListsHolder = JSON.parse(this.jsonPlayListsDefinitie);
+      JSON.parse(this.jsonPlayListsDefinitie);
+      let playListsSaveRequest: PlayListsSaveRequest = {
+        fileContents: this.jsonPlayListsDefinitie
+      }
+      this.httpClient.post<any>(`/ml/savePlayListsFile`, playListsSaveRequest, this.playListsService.getHttpHeader()).subscribe(() => {
+        console.log('playlistfile was saved');
+      });
     } catch (e) {
       this.hasSyntaxError = true;
       let errorArray = e.message.split(' ');

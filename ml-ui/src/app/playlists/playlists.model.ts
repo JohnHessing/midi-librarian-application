@@ -23,8 +23,16 @@ export interface FileContentsResponse {
   fileContents: string;
 }
 
+export interface NetworkInfo {
+  ip: string;
+}
+
 export interface FileSaveRequest {
   songName: string;
   path: string;
+  fileContents: string;
+}
+
+export interface PlayListsSaveRequest {
   fileContents: string;
 }

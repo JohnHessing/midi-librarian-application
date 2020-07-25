@@ -1,6 +1,8 @@
 package nl.bs.midilibrarian.port.adapters.rest;
 
+import nl.bs.midilibrarian.GlobalConfig;
 import nl.bs.midilibrarian.domain.FileContentsResponse;
+import nl.bs.midilibrarian.domain.SavePlayListsFileRequest;
 import nl.bs.midilibrarian.domain.SaveTextFileRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +14,8 @@ import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.rtf.RTFEditorKit;
 import java.io.*;
 import java.util.Scanner;
+
+import static nl.bs.midilibrarian.util.FileUtil.getTextFromFile;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -68,6 +72,22 @@ public class TextFileResource {
         }
     }
 
+    @PostMapping(value = "/savePlayListsFile")
+    public void savePlayListsFileContents(@RequestBody SavePlayListsFileRequest savePlayListsFileRequest) {
+        String fileName = GlobalConfig.getGlobalConfigInstance().getPlayListConfigFileName();
+        String fileContents = savePlayListsFileRequest.getFileContents();
+        LOG.info("Trying to write playlists definition {} to config file {}", fileContents, fileName);
+        if (fileIsAvailable(fileName)) {
+            LOG.info("File {} found. Will be backuped first.", fileName);
+            backupFile(fileName);
+        }
+        try {
+            createAndWriteFile(fileContents, fileName);
+        } catch (IOException e) {
+            LOG.error("File {} could not be written. {}", fileName, e.getMessage());
+        }
+    }
+
     private void createAndWriteFile(String fileContents, String fileName) throws IOException {
         File file = new File(fileName);
         if (file.createNewFile()) {
@@ -82,41 +102,19 @@ public class TextFileResource {
         file.delete();
     }
 
+    private void backupFile(String fileName) {
+        File file = new File(fileName);
+        String renameToName = fileName + ".bak";
+        if (fileIsAvailable(renameToName)) {
+            deleteFile(renameToName);
+        }
+        File renameToFile = new File(renameToName);
+        file.renameTo(renameToFile);
+    }
+
     private boolean fileIsAvailable(String fileName) {
         File file = new File(fileName);
         return (file.exists());
     }
 
-//    private String getTextFromRtf(String filePath) {
-//        String result = null;
-//        File file = new File(filePath);
-//        try {
-//            DefaultStyledDocument styledDoc = new DefaultStyledDocument();
-//            InputStream is = new FileInputStream(file);
-//            new RTFEditorKit().read(is, styledDoc, 0);
-//            result = new String(styledDoc.getText(0,styledDoc.getLength()).
-//                    getBytes("ISO8859_1"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (BadLocationException e) {
-//            e.printStackTrace();
-//        }
-//        return result;
-//    }
-
-    private String getTextFromFile(String filePath) {
-        StringBuffer buffer = new StringBuffer();
-        File file = new File(filePath);
-        try {
-            Scanner myReader = new Scanner(file);
-            while (myReader.hasNextLine()) {
-                buffer.append(myReader.nextLine());
-            }
-            myReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-        return buffer.toString();
-    }
 }

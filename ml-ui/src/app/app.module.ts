@@ -9,14 +9,16 @@ import { PlayListsComponent } from './playlists/playlists.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CKEditorModule } from 'ng2-ckeditor';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PlayListEditorComponent } from './play-list-editor/play-list-editor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    PlayListsComponent
+    PlayListsComponent,
+    PlayListEditorComponent
   ],
   imports: [
     BrowserModule,

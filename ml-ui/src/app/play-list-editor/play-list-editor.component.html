@@ -1,4 +1,4 @@
-<button class="btn btn-primary w-100 btn-block"><a style="text-decoration: none" routerLink="/home" routerLinkActive="active">Terug</a></button>
+<button class="btn btn-primary w-100 btn-block"><a style="text-decoration: none; color: black" routerLink="/home" routerLinkActive="active">Terug</a></button>
 &nbsp;
 &nbsp;
 &nbsp;
@@ -13,11 +13,8 @@
 
 <div class="form-group mt-3" style="position: relative; left: 30px;">
 
-  <label for="jsonPlayLists">Playlists definitie</label>
-
+  <label style="background-color: #DDDDDD; border: groove" for="jsonPlayLists">&nbsp;&nbsp;&nbsp; Playlists definitie &nbsp;&nbsp;&nbsp;</label>
   <br />
-  <br />
-
   <textarea id="jsonPlayLists"
             class="form-control" tabindex="1"
             [(ngModel)]="this.jsonPlayListsDefinitie"
