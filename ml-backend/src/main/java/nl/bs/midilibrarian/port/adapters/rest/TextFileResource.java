@@ -47,7 +47,7 @@ public class TextFileResource {
     public FileContentsResponse getCurrentFileContents() {
         FileContentsResponse response = new FileContentsResponse();
         response.setFileContents(currenSongText);
-        LOG.info("Current song text is retrieved: " + response.getFileContents());
+        LOG.debug("Current song text is retrieved: " + response.getFileContents());
         return response;
     }
 

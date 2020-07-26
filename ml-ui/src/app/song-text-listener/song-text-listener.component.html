@@ -1,3 +1,6 @@
-<div>
-  <app-text-listener></app-text-listener>
-</div>
+<ckeditor
+  [(ngModel)]="content"
+  [config]="config"
+  [readonly]="false"
+  debounce="500">
+</ckeditor>

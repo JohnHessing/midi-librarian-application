@@ -12,7 +12,6 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PlayListEditorComponent } from './play-list-editor/play-list-editor.component';
 import { SongTextListenerComponent } from './song-text-listener/song-text-listener.component';
-import {TextListenerComponent} from "./text-listener/text-listener.component";
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import {TextListenerComponent} from "./text-listener/text-listener.component";
     HomeComponent,
     PlayListsComponent,
     PlayListEditorComponent,
-    SongTextListenerComponent,
-    TextListenerComponent
+    SongTextListenerComponent
   ],
   imports: [
     BrowserModule,

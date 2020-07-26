@@ -11,18 +11,41 @@ import {FileContentsResponse} from "../playlists/playlists.model";
 })
 export class SongTextListenerComponent implements OnInit {
 
+  content = '';
+
+  refreshRate = 1000;
+
+  config: any = {
+    allowedContent: true,
+    toolbar: [[]],
+    removePlugins: 'elementspath',
+    resize_enabled: true,
+    resize_dir: 'both',
+    extraPlugins: 'font,divarea,placeholder',
+    contentsCss: ['body {font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;}'],
+    autoParagraph: false,
+    fullScreen: true,
+    height: 1500,
+    width: 820,
+    enterMode: 2
+  };
   constructor(private readonly httpClient: HttpClient,
               private readonly eventBusService: EventBusService) { }
 
   ngOnInit(): void {
+
+    this.eventBusService.TextFileRecievedStream.subscribe( result => {
+      this.content = result.fileContents;
+    });
+
     this.keepOnRefreshing();
   }
 
   keepOnRefreshing() {
-    this.refreshCurrentSongContents();
+      this.refreshCurrentSongContents();
     setTimeout(() => {
       this.keepOnRefreshing();
-    }, 1000);
+    }, this.refreshRate);
   }
 
   refreshCurrentSongContents() {

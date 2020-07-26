@@ -78,7 +78,7 @@ export class PlayListsComponent implements OnInit {
     this.playListsService.retrievePlayLists().
       subscribe( result => {
         this.playListsHolder = result;
-        this.activatePlayList(0);
+        this.activatePlayList(1);
     });
 
     this.eventBusService.TextFileRecievedStream.subscribe( result => {
@@ -94,11 +94,7 @@ export class PlayListsComponent implements OnInit {
     };
   }
 
-  // public retrievePlayLists(): Observable<PlayListsHolder> {
-  //   return this.httpClient.get<PlayListsHolder>(`/ml/playlists`, this.getHttpHeader());
-  // }
-
-  activatePlayList(i: number): void {
+ activatePlayList(i: number): void {
     this.playListsHolder.playLists.forEach(playList => {playList.isActive = false;})
     this.activePlayList = this.playListsHolder.playLists[i - 1];
     if (this.activePlayList !== undefined) {
