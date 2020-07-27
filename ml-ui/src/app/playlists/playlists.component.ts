@@ -192,7 +192,7 @@ export class PlayListsComponent implements OnInit {
   }
 
   hasMp3(playListItem: PlayListItem): boolean {
-    if (playListItem.mp3Title) {
+    if (playListItem.mp3FilePath) {
       return true;
     }
     return false;
@@ -201,7 +201,7 @@ export class PlayListsComponent implements OnInit {
   playMp3(playListItem: PlayListItem) {
     const playlist = [
       {
-        title: playListItem.mp3Title,
+        title: playListItem.name,
         link: playListItem.mp3FilePath
       }
     ];

@@ -9,7 +9,6 @@ public class PlayListItem implements Serializable {
     private Integer nr;
     private String name;
     private Integer delay;
-    private String mp3Title;
     private String mp3FilePath;
 
     public Integer getNr() {
@@ -34,14 +33,6 @@ public class PlayListItem implements Serializable {
 
     public void setDelay(Integer delay) {
         this.delay = delay;
-    }
-
-    public String getMp3Title() {
-        return mp3Title;
-    }
-
-    public void setMp3Title(String mp3Title) {
-        this.mp3Title = mp3Title;
     }
 
     public String getMp3FilePath() {

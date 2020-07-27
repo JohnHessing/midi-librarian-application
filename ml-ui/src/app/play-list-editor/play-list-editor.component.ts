@@ -25,7 +25,7 @@ export class PlayListEditorComponent implements OnInit {
     this.playListsService.retrievePlayLists().
     subscribe( result => {
       this.playListsHolder = result;
-      this.jsonPlayListsDefinitie = JSON.stringify(this.playListsHolder, ["playLists", "path", "name", "playListItems", "delay", "mp3Title", "mp3FilePath"], 2);
+      this.jsonPlayListsDefinitie = JSON.stringify(this.playListsHolder, ["playLists", "path", "name", "playListItems", "delay", "mp3FilePath"], 2);
     });
 
   }

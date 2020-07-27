@@ -17,7 +17,6 @@ export interface PlayListItem {
   isActive: boolean;
   isPlaying: boolean;
   hasFocus: boolean;
-  mp3Title: string;
   mp3FilePath: string;
 }
 

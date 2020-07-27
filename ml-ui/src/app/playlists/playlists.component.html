@@ -1,5 +1,7 @@
+
 <div style="float: left">
-  <h6>Choose playlist</h6>
+  <br />
+  <h6>&nbsp;Choose playlist</h6>
   <ul class="playlists">
     <li *ngFor="let playList of playListsHolder?.playLists"
       (focus)="this.activatePlayList(playList.nr)"
@@ -10,18 +12,23 @@
     </li>
   </ul>
 
-  <button class="btn-sm w-75" style="position: relative; left: 5px;"><a style="text-decoration: none; color: black" routerLink="/playlisteditor" routerLinkActive="active">Modify playlists</a></button>
   <br />
   <br />
-  <button class="btn-sm w-75" style="position: relative; left: 5px;"><a style="text-decoration: none; color: black" routerLink="/textListener" routerLinkActive="active">Textlistener mode</a></button>
+  <br />
+  <br />
+  <br />
+  <button class="btn-sm w-75" style="position: relative; left: 15px;"><a style="text-decoration: none; color: black" routerLink="/playlisteditor" routerLinkActive="active">Modify playlists</a></button>
+  <br />
+  <button class="btn-sm w-75" style="position: relative; left: 15px;"><a style="text-decoration: none; color: black" routerLink="/textListener" routerLinkActive="active">Textlistener mode</a></button>
   <br />
   <br />
   <!--<button class="btn btn-primary w-100 btn-block"><a style="text-decoration: none; color: black" routerLink="/audioPlayer" routerLinkActive="active">Audioplayer</a></button>-->
-  <div style="font-size: 12px"><br/><br/>(IP-address: {{this.ipAddress}})</div>
+  <div style="font-size: 12px; position: relative; left: 10px"><br/><br/>(IP-address: {{this.ipAddress}})</div>
 
 </div>
 
 <div style="float: left">
+  <br />
   <h6>Songs</h6>
   <ul class="songs">
     <div class="warn" *ngIf="this.activePlayList === undefined">&#x2190; Choose a playlist</div>
@@ -37,7 +44,7 @@
         <span *ngIf="playListItem?.isActive && !playListItem?.isPlaying"class="tekst"> &#x2705; </span>
         <span *ngIf="playListItem?.isPlaying"class="tekst"> &#x231B; </span>
       </span>
-      <span *ngIf="hasMp3(playListItem)"><button style="height:20px; position: relative; left: 5px; top: -2px; width: 20px; background-color: #BBD8DC" (click)="playMp3(playListItem)"> <span style="position: relative; left: -5px; top: -5px">&#9835;</span> </button></span>
+      <span *ngIf="hasMp3(playListItem)"><button style="height:20px; position: absolute; left: 290px; top: 4px; width: 20px; background-color: #BBD8DC" (click)="playMp3(playListItem)"> <span style="position: relative; left: -5px; top: -5px">&#9835;</span> </button></span>
     </li>
   </ul>
 
@@ -65,7 +72,7 @@
 <div style="float: left">
 
     <ckeditor
-      style="position: relative; top: 0px; left: -90px"
+      style="position: relative; top: -22px"
         [(ngModel)]="content"
         [config]="config"
         [readonly]="false"
