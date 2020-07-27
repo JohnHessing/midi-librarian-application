@@ -6,83 +6,123 @@
       "playListItems": [
         {
           "name": "I Love Your Smile",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Sir Duke",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Shake Your Body",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Man! I Feel Like A Woman",
-          "delay": 1100
+          "delay": 1100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Superstition",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "COMBI knop",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Love Never Felt So Good",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Don't You Worry",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "COMBI knop",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Something Got Me Started",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Disco Inferno",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Bad Girl",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Le Freak",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "River Deep Mountain High",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Ease On Down",
-          "delay": 1200
+          "delay": 1200,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "If I Ain't Got You",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Just The Two Of Us",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Gimme Gimme",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Perfect",
-          "delay": 1300
+          "delay": 1300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Don't Stop Me Now",
-          "delay": 1300
+          "delay": 1300,
+          "mp3Title": null,
+          "mp3FilePath": null
         }
       ]
     },
@@ -92,195 +132,291 @@
       "playListItems": [
         {
           "name": "Blame It On The Boogie",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Streetlife",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I Wish",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Shake Your Body",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Uptown Funk",
-          "delay": 2000
+          "delay": 2000,
+          "mp3Title": "Uptown Funk funk",
+          "mp3FilePath": "../../assets/mp3/Uptown Funk.mp3"
         },
         {
           "name": "Superstition",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "COMBI knop",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Valerie",
-          "delay": 1100
+          "delay": 1100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Disco Inferno",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Relight My Fire",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Le Freak",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Love Never Felt So Good",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Locked Out Of Heaven",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Let's Stay Together",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Some Kind Of Wonderfull",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Roxanne",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Mama Told You Not To Come",
-          "delay": 1100
+          "delay": 1100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Don't You Worry",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "COMBI knop",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Something Got Me Started",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Bad Girl",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Show Me Love",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Bad Girl",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "River Deep Mountain High",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Ease On Down",
-          "delay": 1200
+          "delay": 1200,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "If I Ain't Got You",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Just The Two Of Us",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Gimme Gimme",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Perfect",
-          "delay": 1300
+          "delay": 1300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Don't Stop Me Now",
-          "delay": 1300
+          "delay": 1300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Man! I Feel Like A Woman",
-          "delay": 1100
+          "delay": 1100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Natural Woman",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Always There",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Think",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "transpose-4",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "transpose-3",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Voulez Vous Coucher",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "If You Don't Know Me",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Walking On Sunshine",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "As",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Material Girl",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Sir Duke",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "123",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Black Velvet",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Mercy",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Super Duper Love",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "You Might Need Somebody",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Nine To Five",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         }
       ]
     },
@@ -290,83 +426,123 @@
       "playListItems": [
         {
           "name": "Superstition",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "COMBI knop",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I Feel For You",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Streetlife",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Everybody (no file)",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Treasure (no file)",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Cant Stop The Feeling (no file)",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "This Is My Life",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Some Kind Of Wonderfull",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Wake Me Up Before You Go Go",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Heaven Must Be Missing",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Blame It On The Boogie",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Love Never Felt So Good",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Girl (no file)",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I Wish",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Shake Your Body",
-          "delay": 1300
+          "delay": 1300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Uptown Funk",
-          "delay": 1300
+          "delay": 1300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Don't You Worry",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "COMBI knop",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I'm Every Woman",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         }
       ]
     },
@@ -376,47 +552,69 @@
       "playListItems": [
         {
           "name": "Something Got Me Started",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "All About That Bass",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Greatest Dancer",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Valerie",
-          "delay": 1100
+          "delay": 1100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "As",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Shame Shame Shame",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Disco Inferno",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Relight My Fire",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Le Freak",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Locked Out Of Heaven",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Moloko medley",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         }
       ]
     },
@@ -426,59 +624,87 @@
       "playListItems": [
         {
           "name": "Ich Bin Wie Du",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I Will Survive",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Bad Girl",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Show Me Love",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Bad Girl",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Medley September",
-          "delay": 1300
+          "delay": 1300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Proud Mary",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "River Deep Mountain High",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Nee Je Hoeft Niet Naar Huis",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Ease On Down",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Think",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "transpose-4",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "transpose-3",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "If I Ain't Got You",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         }
       ]
     },
@@ -488,87 +714,129 @@
       "playListItems": [
         {
           "name": "Material Girl",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I'm Every Woman",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "You Might Need Somebody",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Super Duper Love",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Just The Two Of Us",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I Wish I Didn't Miss You Anymore",
-          "delay": 1500
+          "delay": 1500,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Walking On Sunshine",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "It's Raining Men",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Jump (Pointer Sisters)",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I'm So Exited",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Always There",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Sir Duke",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I've Got The Music In Me",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Nine To Five",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I Wanna Dance With Somebody",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "I Wanna Dance verhoogd",
-          "delay": 0
+          "delay": 0,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Voulez Vous Coucher",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "If You Don't Know Me",
-          "delay": 300
+          "delay": 300,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Black Velvet",
-          "delay": 100
+          "delay": 100,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Long Train Running",
-          "delay": 1000
+          "delay": 1000,
+          "mp3Title": null,
+          "mp3FilePath": null
         },
         {
           "name": "Mercy",
-          "delay": 600
+          "delay": 600,
+          "mp3Title": null,
+          "mp3FilePath": null
         }
       ]
     }

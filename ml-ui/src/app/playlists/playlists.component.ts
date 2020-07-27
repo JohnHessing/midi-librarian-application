@@ -4,9 +4,14 @@ import {Observable} from 'rxjs';
 import {FileSaveRequest, NetworkInfo, PlayList, PlayListItem, PlayListsHolder} from './playlists.model';
 import {EventBusService} from '../services/event-bus.service';
 import {FileContentsResponse} from '../playlists/playlists.model';
-import {element} from "protractor";
-import {CKEditorComponent} from "ng2-ckeditor/ckeditor.component";
+// import {CKEditorComponent} from "ng2-ckeditor/ckeditor.component";
 import {PlayListsService} from "../services/playlists-service";
+import { Track, MatAdvancedAudioPlayerComponent } from 'ngx-audio-player';
+import {Router} from "@angular/router";
+import {Mp3PlayerService} from "../mp3-player/mp3-player-service";
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Mp3PlayerComponent} from "../mp3-player/mp3-player.component";
+import {fromPromise} from "rxjs/internal/observable/fromPromise";
 
 @Component({
   selector: 'app-playlists',
@@ -63,9 +68,14 @@ export class PlayListsComponent implements OnInit {
     enterMode: 2
   };
 
+  focusedListItemIndex = 0;
+
   constructor(private readonly httpClient: HttpClient,
               private readonly eventBusService: EventBusService,
-              private readonly playListsService: PlayListsService) { }
+              private readonly playListsService: PlayListsService,
+              private readonly router: Router,
+              private readonly modalService: NgbModal,
+              private mp3PlayerService: Mp3PlayerService) {}
 
   ngOnInit(): void {
 
@@ -100,6 +110,7 @@ export class PlayListsComponent implements OnInit {
     if (this.activePlayList !== undefined) {
       this.activePlayList.isActive = true;
       this.activePlayList.playListItems.forEach(playListItem => {playListItem.isActive = false;})
+      this.setFocusedPlayListItem(1);
     }
   }
 
@@ -112,6 +123,10 @@ export class PlayListsComponent implements OnInit {
     console.log('File ' + this.activePlayListItem.name + '.syx will be sent');
     this.sendPlayListItem(this.activePlayListItem, this.activePlayList.path)
     .pipe().subscribe( () => { console.log('File is sent'); this.activePlayListItem.isPlaying = false;} )
+
+    if (i < this.activePlayList.playListItems.length) {
+      this.setFocusedPlayListItem(i + 1);
+    }
   }
 
   sendPlayListItem(playListItem: PlayListItem, filePath: string): Observable<any> {
@@ -127,7 +142,6 @@ export class PlayListsComponent implements OnInit {
         });
 
     return this.httpClient.post<any>(`/ml/sendFile`, body, this.getHttpHeader());
-
   }
 
   retrieveTextFileContents(playListItem: PlayListItem, filePath: string): Observable<FileContentsResponse> {
@@ -155,8 +169,61 @@ export class PlayListsComponent implements OnInit {
     });
   }
 
+  setFocusedPlayListItem(i: number) {
+    this.focusedListItemIndex = i;
+    document.getElementById("PLAY_LIST_ITEM_" + this.focusedListItemIndex).focus().scrollIntoView();
+  }
+
+  handleKeyboardEvent(event: KeyboardEvent, i: number) {
+    if (event.code === 'ArrowDown') {
+      if (i < this.activePlayList.playListItems.length) {
+        this.setFocusedPlayListItem(i + 1);
+      }
+    }
+    if (event.code === 'ArrowUp') {
+      if (i > 1) {
+        this.setFocusedPlayListItem(i - 1);
+      }
+    }
+    if (event.code === 'Space' || event.code === 'Enter') {
+      this.activatePlayListItem(this.focusedListItemIndex);
+    }
+
+  }
+
+  hasMp3(playListItem: PlayListItem): boolean {
+    if (playListItem.mp3Title) {
+      return true;
+    }
+    return false;
+  }
+
+  playMp3(playListItem: PlayListItem) {
+    const playlist = [
+      {
+        title: playListItem.mp3Title,
+        link: playListItem.mp3FilePath
+      }
+    ];
+    this.mp3PlayerService.playlist = playlist;
+    this.callMp3Player();
+
+  }
+
   getIpAddress() : Observable<NetworkInfo> {
       return this.httpClient.get<NetworkInfo>(`/ml/localIP`, this.getHttpHeader());
+  }
+
+  callMp3Player() {
+    this.player().subscribe();
+  }
+
+  player(): Observable<string> {
+    const modalPlayer = this.modalService.open(Mp3PlayerComponent, {
+      centered: true
+    });
+
+    return fromPromise(modalPlayer.result);
   }
 
 }

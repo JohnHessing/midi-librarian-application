@@ -12,6 +12,10 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PlayListEditorComponent } from './play-list-editor/play-list-editor.component';
 import { SongTextListenerComponent } from './song-text-listener/song-text-listener.component';
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Mp3PlayerComponent } from './mp3-player/mp3-player.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,14 +24,18 @@ import { SongTextListenerComponent } from './song-text-listener/song-text-listen
     HomeComponent,
     PlayListsComponent,
     PlayListEditorComponent,
-    SongTextListenerComponent
+    SongTextListenerComponent,
+    Mp3PlayerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CKEditorModule,
-    FormsModule
+    FormsModule,
+    NgxAudioPlayerModule,
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

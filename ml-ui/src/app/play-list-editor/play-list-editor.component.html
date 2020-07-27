@@ -1,20 +1,19 @@
-<button class="btn btn-primary w-100 btn-block"><a style="text-decoration: none; color: black" routerLink="/home" routerLinkActive="active">Terug</a></button>
+<button class="btn-sm w-25"><a style="text-decoration: none; color: black" routerLink="/home" routerLinkActive="active">Back</a></button>
 &nbsp;
 &nbsp;
 &nbsp;
-<button class="btn btn-primary w-100 btn-block" (click)="savePlayLists();">Wijzigingen opslaan</button>
+<button class="btn-sm w-25" (click)="savePlayLists();">Save changes</button>
 &nbsp;
 &nbsp;
 <label *ngIf="this.hasSyntaxError" class="btn btn-primary w-100 btn-block">Syntax error, file is not saved</label>
-<label *ngIf="!this.hasSyntaxError && this.isSaved" class="btn btn-primary w-100 btn-block">File is saved</label>
+<label *ngIf="!this.hasSyntaxError && this.isSaved" class="btn-info">&nbsp;&nbsp;&nbsp; File is saved &nbsp;&nbsp;&nbsp;</label>
 
 <br />
 <br />
 
 <div class="form-group mt-3" style="position: relative; left: 30px;">
 
-  <label style="background-color: #DDDDDD; border: groove" for="jsonPlayLists">&nbsp;&nbsp;&nbsp; Playlists definitie &nbsp;&nbsp;&nbsp;</label>
-  <br />
+  <label style="background-color: #DDDDDD; border: none" for="jsonPlayLists">&nbsp;&nbsp;&nbsp; Playlists definition &nbsp;&nbsp;&nbsp;</label>
   <textarea id="jsonPlayLists"
             class="form-control" tabindex="1"
             [(ngModel)]="this.jsonPlayListsDefinitie"
