@@ -1,0 +1,12 @@
+<div style="padding-left: 50px" >
+  <button class="btn-sm"><a style="text-decoration: none; color: black" routerLink="/home" routerLinkActive="active">Back</a></button>
+  <br />
+  <br />
+  <br />
+  <ul class="songs">
+    <li *ngFor="let audioFile of this.audioFiles.files">
+      <span class="tekst">{{audioFile}}</span>
+      <button style="height:20px; position: absolute; left: 620px; top: 4px; width: 20px; background-color: #BBD8DC" (click)="playMp3(audioFile)"> <span style="position: relative; left: -5px; top: -5px">&#9835;</span> </button>
+    </li>
+  </ul>
+</div>

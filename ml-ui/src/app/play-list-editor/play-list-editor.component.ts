@@ -1,8 +1,9 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {PlayListsService} from "../services/playlists-service";
 import {PlayListsHolder, PlayListsSaveRequest} from "../playlists/playlists.model";
 import {ValidationErrors} from "@angular/forms";
 import {HttpClient} from "@angular/common/http";
+import {EventBusService} from "../services/event-bus.service";
 
 @Component({
   selector: 'app-play-list-editor',
@@ -22,10 +23,9 @@ export class PlayListEditorComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.playListsService.retrievePlayLists().
-    subscribe( result => {
+    this.playListsService.retrievePlayLists().subscribe(result => {
       this.playListsHolder = result;
-      this.jsonPlayListsDefinitie = JSON.stringify(this.playListsHolder, ["playLists", "path", "name", "playListItems", "delay", "mp3FilePath"], 2);
+      this.jsonPlayListsDefinitie = JSON.stringify(this.playListsHolder, ["playLists", "path", "name", "playListItems", "delay", "mp3File", "mp3FilePathRelative", "mp3FilePathAbsolute"], 2);
     });
 
   }
@@ -53,20 +53,20 @@ export class PlayListEditorComponent implements OnInit {
   }
 
   setSelectionRange(input, selectionStart, selectionEnd) {
-  if (input.setSelectionRange) {
-    input.focus();
-    input.setSelectionRange(selectionStart, selectionEnd);
+    if (input.setSelectionRange) {
+      input.focus();
+      input.setSelectionRange(selectionStart, selectionEnd);
+    }
+    else if (input.createTextRange) {
+      var range = input.createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', selectionEnd);
+      range.moveStart('character', selectionStart);
+      range.select();
+    }
   }
-  else if (input.createTextRange) {
-    var range = input.createTextRange();
-    range.collapse(true);
-    range.moveEnd('character', selectionEnd);
-    range.moveStart('character', selectionStart);
-    range.select();
-  }
-}
 
-  setCaretToPos (input, pos) {
-  this.setSelectionRange(input, pos, pos);
-}
+  setCaretToPos(input, pos) {
+    this.setSelectionRange(input, pos, pos);
+  }
 }

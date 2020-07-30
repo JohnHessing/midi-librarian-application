@@ -1,5 +1,12 @@
 export interface PlayListsHolder {
   playLists: PlayList[];
+  mp3FilePathRelative: string;
+  mp3FilePathAbsolute: string;
+}
+
+export interface Mp3Config {
+  mp3FilePathRelative: string;
+  mp3FilePathAbsolute: string;
 }
 
 export interface PlayList {
@@ -17,7 +24,7 @@ export interface PlayListItem {
   isActive: boolean;
   isPlaying: boolean;
   hasFocus: boolean;
-  mp3FilePath: string;
+  mp3File: string;
 }
 
 export interface FileContentsResponse {

@@ -1,7 +1,7 @@
 import {AfterContentInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {FileSaveRequest, NetworkInfo, PlayList, PlayListItem, PlayListsHolder} from './playlists.model';
+import {FileSaveRequest, Mp3Config, NetworkInfo, PlayList, PlayListItem, PlayListsHolder} from './playlists.model';
 import {EventBusService} from '../services/event-bus.service';
 import {FileContentsResponse} from '../playlists/playlists.model';
 // import {CKEditorComponent} from "ng2-ckeditor/ckeditor.component";
@@ -95,6 +95,14 @@ export class PlayListsComponent implements OnInit {
       this.content = result.fileContents;
     })
 
+    this.eventBusService.AskToSendMp3ConfigStream.subscribe( () => {
+      const mp3Config  = {
+        mp3FilePathRelative: this.playListsHolder.mp3FilePathRelative,
+        mp3FilePathAbsolute: this.playListsHolder.mp3FilePathAbsolute
+      } as Mp3Config
+      this.eventBusService.Mp3ConfigStream.next(mp3Config);
+    })
+
   }
   getHttpHeader() {
     return {
@@ -171,7 +179,11 @@ export class PlayListsComponent implements OnInit {
 
   setFocusedPlayListItem(i: number) {
     this.focusedListItemIndex = i;
-    document.getElementById("PLAY_LIST_ITEM_" + this.focusedListItemIndex).focus().scrollIntoView();
+    let el = document.getElementById("PLAY_LIST_ITEM_" + this.focusedListItemIndex);
+    if (el) {
+      el.focus();
+      el.scrollIntoView();
+    }
   }
 
   handleKeyboardEvent(event: KeyboardEvent, i: number) {
@@ -192,7 +204,7 @@ export class PlayListsComponent implements OnInit {
   }
 
   hasMp3(playListItem: PlayListItem): boolean {
-    if (playListItem.mp3FilePath) {
+    if (playListItem.mp3File) {
       return true;
     }
     return false;
@@ -202,7 +214,7 @@ export class PlayListsComponent implements OnInit {
     const playlist = [
       {
         title: playListItem.name,
-        link: playListItem.mp3FilePath
+        link: this.playListsHolder.mp3FilePathRelative + '/' + playListItem.mp3File
       }
     ];
     this.mp3PlayerService.playlist = playlist;

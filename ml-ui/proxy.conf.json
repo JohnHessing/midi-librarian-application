@@ -54,6 +54,14 @@
     },
     "secure": false,
     "logLevel": "debug"
+  },
+  "/ml/audioFiles/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/ml": ""
+    },
+    "secure": false,
+    "logLevel": "debug"
   }
 }
 

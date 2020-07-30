@@ -7,27 +7,27 @@
         {
           "name": "I Love Your Smile",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/19 I Love Your Smile.mp3"
+          "mp3File": "19 I Love Your Smile.mp3"
         },
         {
           "name": "Sir Duke",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Sir Duke.mp3"
+          "mp3File": "Sir Duke.mp3"
         },
         {
           "name": "Shake Your Body",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/12 Shake Your Body (Down To The Ground).mp3"
+          "mp3File": "12 Shake Your Body (Down To The Ground).mp3"
         },
         {
           "name": "Man! I Feel Like A Woman",
           "delay": 1100,
-          "mp3FilePath": "../../assets/mp3/Shania Twain - Man! I Feel Like A Woman (Official Music Video).mp3"
+          "mp3File": "Shania Twain - Man! I Feel Like A Woman (Official Music Video).mp3"
         },
         {
           "name": "Superstition",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/16 Superstition.mp3"
+          "mp3File": "16 Superstition.mp3"
         },
         {
           "name": "COMBI knop",
@@ -36,21 +36,21 @@
         {
           "name": "Love Never Felt So Good",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Michael Jackson, Justin Timberlake - Love Never Felt So Good.mp3"
+          "mp3File": "Michael Jackson, Justin Timberlake - Love Never Felt So Good.mp3"
         },
         {
           "name": "Don't You Worry",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/32 Don't You Worry About A Thing.mp3"
+          "mp3File": "32 Don't You Worry About A Thing.mp3"
         },
         {
           "name": "COMBI knop",
           "delay": 0
         },
         {
-          "name": "Something Got Me St.",
+          "name": "Something Got Me Started",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Something Got Me Started.mp3"
+          "mp3File": "Something Got Me Started.mp3"
         },
         {
           "name": "Disco Inferno",
@@ -59,47 +59,47 @@
         {
           "name": "Bad Girls",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/09 Bad Girls.mp3"
+          "mp3File": "09 Bad Girls.mp3"
         },
         {
           "name": "Le Freak",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/09 Le Freak.mp3"
+          "mp3File": "09 Le Freak.mp3"
         },
         {
           "name": "River Deep Mountain High",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/Tina Turner and Ike - River deep mountain high (in G).mp3"
+          "mp3File": "Tina Turner and Ike - River deep mountain high (in G).mp3"
         },
         {
           "name": "Ease On Down",
           "delay": 1200,
-          "mp3FilePath": "../../assets/mp3/09 Ease On Down The Road (Feat. Diana Ross).mp3"
+          "mp3File": "09 Ease On Down The Road (Feat. Diana Ross).mp3"
         },
         {
           "name": "If I Ain't Got You",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/06 If I Aint Got You.mp3"
+          "mp3File": "06 If I Aint Got You.mp3"
         },
         {
           "name": "Just The Two Of Us",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/Just The Two of US.mp3"
+          "mp3File": "Just The Two of US.mp3"
         },
         {
           "name": "Gimme Gimme",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/ABBA - Gimme! Gimme! Gimme! + Mama Mia.mp3"
+          "mp3File": "ABBA - Gimme! Gimme! Gimme! + Mama Mia.mp3"
         },
         {
           "name": "Perfect",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/Fairground Attraction - Perfect (Official Video).mp3"
+          "mp3File": "Fairground Attraction - Perfect (Official Video).mp3"
         },
         {
           "name": "Don't Stop Me Now",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/Queen - Don_'t Stop Me Now (Official Video).mp3"
+          "mp3File": "Queen - Don_'t Stop Me Now (Official Video).mp3"
         }
       ]
     },
@@ -110,32 +110,32 @@
         {
           "name": "Blame It On The Boogie",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/Micheal Jackson 5 - Blame It On The Boogie.mp3"
+          "mp3File": "Micheal Jackson 5 - Blame It On The Boogie.mp3"
         },
         {
           "name": "Streetlife",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/The Crusaders - Streetlife 1979.mp3"
+          "mp3File": "The Crusaders - Streetlife 1979.mp3"
         },
         {
           "name": "I Wish",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/02 I Wish.mp3"
+          "mp3File": "02 I Wish.mp3"
         },
         {
           "name": "Shake Your Body",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/12 Shake Your Body (Down To The Ground).mp3"
+          "mp3File": "12 Shake Your Body (Down To The Ground).mp3"
         },
         {
           "name": "Uptown Funk",
           "delay": 2000,
-          "mp3FilePath": "../../assets/mp3/01 Uptown Funk (feat. Bruno Mars).mp3"
+          "mp3File": "01 Uptown Funk (feat. Bruno Mars).mp3"
         },
         {
           "name": "Superstition",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/16 Superstition.mp3"
+          "mp3File": "16 Superstition.mp3"
         },
         {
           "name": "COMBI knop",
@@ -144,7 +144,7 @@
         {
           "name": "Valerie",
           "delay": 1100,
-          "mp3FilePath": "../../assets/mp3/05 Valerie (Feat. Amy Winehouse).mp3"
+          "mp3File": "05 Valerie (Feat. Amy Winehouse).mp3"
         },
         {
           "name": "Disco Inferno",
@@ -153,116 +153,116 @@
         {
           "name": "Relight My Fire",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/04 Relight My Fire.mp3"
+          "mp3File": "04 Relight My Fire.mp3"
         },
         {
           "name": "Le Freak",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/09 Le Freak.mp3"
+          "mp3File": "09 Le Freak.mp3"
         },
         {
           "name": "Love Never Felt So Good",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Michael Jackson, Justin Timberlake - Love Never Felt So Good.mp3"
+          "mp3File": "Michael Jackson, Justin Timberlake - Love Never Felt So Good.mp3"
         },
         {
           "name": "Locked Out Of Heaven",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/38 Locked out of heaven.mp3"
+          "mp3File": "38 Locked out of heaven.mp3"
         },
         {
           "name": "Let's Stay Together",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Al Green - Let's Stay Together.mp3"
+          "mp3File": "Al Green - Let's Stay Together.mp3"
         },
         {
           "name": "Some Kind Of Wonderfull",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/06 Some Kind Of Wonderful.mp3"
+          "mp3File": "06 Some Kind Of Wonderful.mp3"
         },
         {
           "name": "Roxanne",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/The Police - Roxanne.mp3"
+          "mp3File": "The Police - Roxanne.mp3"
         },
         {
           "name": "Mama Told You Not To Come",
           "delay": 1100,
-          "mp3FilePath": "../../assets/mp3/Tom Jones - Mama Told Me Not To Come.mp3"
+          "mp3File": "Tom Jones - Mama Told Me Not To Come.mp3"
         },
         {
           "name": "Don't You Worry",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/32 Don't You Worry About A Thing.mp3"
+          "mp3File": "32 Don't You Worry About A Thing.mp3"
         },
         {
           "name": "COMBI knop",
           "delay": 0
         },
         {
-          "name": "Something Got Me St.",
+          "name": "Something Got Me Started",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Something Got Me Started.mp3"
+          "mp3File": "Something Got Me Started.mp3"
         },
         {
           "name": "Bad Girls",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/09 Bad Girls.mp3"
+          "mp3File": "09 Bad Girls.mp3"
         },
         {
           "name": "River Deep Mountain High",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/Tina Turner and Ike - River deep mountain high (in G).mp3"
+          "mp3File": "Tina Turner and Ike - River deep mountain high (in G).mp3"
         },
         {
           "name": "Ease On Down",
           "delay": 1200,
-          "mp3FilePath": "../../assets/mp3/09 Ease On Down The Road (Feat. Diana Ross).mp3"
+          "mp3File": "09 Ease On Down The Road (Feat. Diana Ross).mp3"
         },
         {
           "name": "If I Ain't Got You",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/06 If I Aint Got You.mp3"
+          "mp3File": "06 If I Aint Got You.mp3"
         },
         {
           "name": "Just The Two Of Us",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/Just The Two of US.mp3"
+          "mp3File": "Just The Two of US.mp3"
         },
         {
           "name": "Gimme Gimme",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/ABBA - Gimme! Gimme! Gimme! + Mama Mia.mp3"
+          "mp3File": "ABBA - Gimme! Gimme! Gimme! + Mama Mia.mp3"
         },
         {
           "name": "Perfect",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/Fairground Attraction - Perfect (Official Video).mp3"
+          "mp3File": "Fairground Attraction - Perfect (Official Video).mp3"
         },
         {
           "name": "Don't Stop Me Now",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/Queen - Don_'t Stop Me Now (Official Video).mp3"
+          "mp3File": "Queen - Don_'t Stop Me Now (Official Video).mp3"
         },
         {
           "name": "Man! I Feel Like A Woman",
           "delay": 1100,
-          "mp3FilePath": "../../assets/mp3/Shania Twain - Man! I Feel Like A Woman (Official Music Video).mp3"
+          "mp3File": "Shania Twain - Man! I Feel Like A Woman (Official Music Video).mp3"
         },
         {
           "name": "Natural Woman",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/04 A Natural Woman.mp3"
+          "mp3File": "04 A Natural Woman.mp3"
         },
         {
           "name": "Always There",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/Incognito  -  Always There.mp3"
+          "mp3File": "Incognito  -  Always There.mp3"
         },
         {
           "name": "Think",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Think (Freedom).mp3"
+          "mp3File": "Think (Freedom).mp3"
         },
         {
           "name": "transpose-4",
@@ -275,12 +275,12 @@
         {
           "name": "Voulez Vous Coucher",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/05 Labelle - Lady Marmalade.mp3"
+          "mp3File": "05 Labelle - Lady Marmalade.mp3"
         },
         {
           "name": "If You Don't Know Me",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/If You Don't Know Me By Now.mp3"
+          "mp3File": "If You Don't Know Me By Now.mp3"
         },
         {
           "name": "Walking On Sunshine",
@@ -293,17 +293,17 @@
         {
           "name": "Material Girl",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/05 Material Girl.mp3"
+          "mp3File": "05 Material Girl.mp3"
         },
         {
           "name": "Sir Duke",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Sir Duke.mp3"
+          "mp3File": "Sir Duke.mp3"
         },
         {
           "name": "123",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/123.mp3"
+          "mp3File": "123.mp3"
         },
         {
           "name": "Black Velvet",
@@ -312,22 +312,22 @@
         {
           "name": "Mercy",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/01 Mercy.mp3"
+          "mp3File": "01 Mercy.mp3"
         },
         {
           "name": "Super Duper Love",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/02 Super Duper Love.mp3"
+          "mp3File": "02 Super Duper Love.mp3"
         },
         {
-          "name": "You Might Need Someb.",
+          "name": "You Might Need Somebody",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/You might need somebody.mp3"
+          "mp3File": "You might need somebody.mp3"
         },
         {
           "name": "Nine To Five",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Dolly Parton - Nine to Five.mp3"
+          "mp3File": "Dolly Parton - Nine to Five.mp3"
         }
       ]
     },
@@ -338,7 +338,7 @@
         {
           "name": "Superstition",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/16 Superstition.mp3"
+          "mp3File": "16 Superstition.mp3"
         },
         {
           "name": "COMBI knop",
@@ -351,7 +351,7 @@
         {
           "name": "Streetlife",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/The Crusaders - Streetlife 1979.mp3"
+          "mp3File": "The Crusaders - Streetlife 1979.mp3"
         },
         {
           "name": "Everybody (no file)",
@@ -359,7 +359,8 @@
         },
         {
           "name": "Treasure (no file)",
-          "delay": 0
+          "delay": 0,
+          "mp3File": "Bruno Mars - Treasure.mp3"
         },
         {
           "name": "Cant Stop The Feeling (no file)",
@@ -372,7 +373,7 @@
         {
           "name": "Some Kind Of Wonderfull",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/06 Some Kind Of Wonderful.mp3"
+          "mp3File": "06 Some Kind Of Wonderful.mp3"
         },
         {
           "name": "Wake Me Up Before You Go Go",
@@ -385,36 +386,37 @@
         {
           "name": "Blame It On The Boogie",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/Micheal Jackson 5 - Blame It On The Boogie.mp3"
+          "mp3File": "Micheal Jackson 5 - Blame It On The Boogie.mp3"
         },
         {
           "name": "Love Never Felt So Good",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Michael Jackson, Justin Timberlake - Love Never Felt So Good.mp3"
+          "mp3File": "Michael Jackson, Justin Timberlake - Love Never Felt So Good.mp3"
         },
         {
           "name": "Girl (no file)",
-          "delay": 0
+          "delay": 0,
+          "mp3File": "Anouk - Girl.mp3"
         },
         {
           "name": "I Wish",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/02 I Wish.mp3"
+          "mp3File": "02 I Wish.mp3"
         },
         {
           "name": "Shake Your Body",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/12 Shake Your Body (Down To The Ground).mp3"
+          "mp3File": "12 Shake Your Body (Down To The Ground).mp3"
         },
         {
           "name": "Uptown Funk",
           "delay": 2000,
-          "mp3FilePath": "../../assets/mp3/01 Uptown Funk (feat. Bruno Mars).mp3"
+          "mp3File": "01 Uptown Funk (feat. Bruno Mars).mp3"
         },
         {
           "name": "Don't You Worry",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/32 Don't You Worry About A Thing.mp3"
+          "mp3File": "32 Don't You Worry About A Thing.mp3"
         },
         {
           "name": "COMBI knop",
@@ -423,7 +425,7 @@
         {
           "name": "I'm Every Woman",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/1749 I'm Every Woman.mp3"
+          "mp3File": "1749 I'm Every Woman.mp3"
         }
       ]
     },
@@ -432,14 +434,14 @@
       "name": "In The Groove set 2",
       "playListItems": [
         {
-          "name": "Something Got Me St.",
+          "name": "Something Got Me Started",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Something Got Me Started.mp3"
+          "mp3File": "Something Got Me Started.mp3"
         },
         {
           "name": "All About That Bass",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/02 All About That Bass.mp3"
+          "mp3File": "02 All About That Bass.mp3"
         },
         {
           "name": "Greatest Dancer",
@@ -448,7 +450,7 @@
         {
           "name": "Valerie",
           "delay": 1100,
-          "mp3FilePath": "../../assets/mp3/05 Valerie (Feat. Amy Winehouse).mp3"
+          "mp3File": "05 Valerie (Feat. Amy Winehouse).mp3"
         },
         {
           "name": "As",
@@ -457,7 +459,7 @@
         {
           "name": "Shame Shame Shame",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/01 Shame, Shame, Shame.mp3"
+          "mp3File": "01 Shame, Shame, Shame.mp3"
         },
         {
           "name": "Disco Inferno",
@@ -466,21 +468,22 @@
         {
           "name": "Relight My Fire",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/04 Relight My Fire.mp3"
+          "mp3File": "04 Relight My Fire.mp3"
         },
         {
           "name": "Le Freak",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/09 Le Freak.mp3"
+          "mp3File": "09 Le Freak.mp3"
         },
         {
           "name": "Locked Out Of Heaven",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/38 Locked out of heaven.mp3"
+          "mp3File": "38 Locked out of heaven.mp3"
         },
         {
           "name": "Moloko medley",
-          "delay": 100
+          "delay": 100,
+          "mp3File": "Moloko+Sophie+Modjo Medley3 - (1e+3e= halve verlaagd).mp3"
         }
       ]
     },
@@ -491,17 +494,17 @@
         {
           "name": "Ich Bin Wie Du",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Ich bin wie du.mp3"
+          "mp3File": "Ich bin wie du.mp3"
         },
         {
           "name": "I Will Survive",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/01 I Will Survive.mp3"
+          "mp3File": "01 I Will Survive.mp3"
         },
         {
           "name": "Bad Girls",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/09 Bad Girls.mp3"
+          "mp3File": "09 Bad Girls.mp3"
         },
         {
           "name": "Show Me Love",
@@ -510,37 +513,37 @@
         {
           "name": "Bad Girls",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/09 Bad Girls.mp3"
+          "mp3File": "09 Bad Girls.mp3"
         },
         {
           "name": "Medley September",
           "delay": 1300,
-          "mp3FilePath": "../../assets/mp3/September mdley.mp3"
+          "mp3File": "September mdley.mp3"
         },
         {
           "name": "Proud Mary",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/Tina Turner + Ike - Proud Mary.mp3"
+          "mp3File": "Tina Turner + Ike - Proud Mary.mp3"
         },
         {
           "name": "River Deep Mountain High",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/Tina Turner and Ike - River deep mountain high (in G).mp3"
+          "mp3File": "Tina Turner and Ike - River deep mountain high (in G).mp3"
         },
         {
           "name": "Nee Je Hoeft Niet Naar Huis",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/Je hoeft niet naar huis vanacht (F).mp3"
+          "mp3File": "Je hoeft niet naar huis vanacht (F).mp3"
         },
         {
           "name": "Ease On Down",
           "delay": 1200,
-          "mp3FilePath": "../../assets/mp3/09 Ease On Down The Road (Feat. Diana Ross).mp3"
+          "mp3File": "09 Ease On Down The Road (Feat. Diana Ross).mp3"
         },
         {
           "name": "Think",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Think (Freedom).mp3"
+          "mp3File": "Think (Freedom).mp3"
         },
         {
           "name": "transpose-4",
@@ -553,7 +556,7 @@
         {
           "name": "If I Ain't Got You",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/06 If I Aint Got You.mp3"
+          "mp3File": "06 If I Aint Got You.mp3"
         }
       ]
     },
@@ -564,32 +567,32 @@
         {
           "name": "Material Girl",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/05 Material Girl.mp3"
+          "mp3File": "05 Material Girl.mp3"
         },
         {
           "name": "I'm Every Woman",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/1749 I'm Every Woman.mp3"
+          "mp3File": "1749 I'm Every Woman.mp3"
         },
         {
-          "name": "You Might Need Someb.",
+          "name": "You Might Need Somebody",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/You might need somebody.mp3"
+          "mp3File": "You might need somebody.mp3"
         },
         {
           "name": "Super Duper Love",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/02 Super Duper Love.mp3"
+          "mp3File": "02 Super Duper Love.mp3"
         },
         {
           "name": "Just The Two Of Us",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/Just The Two of US.mp3"
+          "mp3File": "Just The Two of US.mp3"
         },
         {
-          "name": "Wish Didn't Miss You An.",
+          "name": "I Wish I Didn't Miss You Anymore",
           "delay": 1500,
-          "mp3FilePath": "../../assets/mp3/06 Wish I Didn't Miss You.mp3"
+          "mp3File": "06 Wish I Didn't Miss You.mp3"
         },
         {
           "name": "Walking On Sunshine",
@@ -598,42 +601,42 @@
         {
           "name": "It's Raining Men",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/The Weather Girls - It's Raining Men.mp3"
+          "mp3File": "The Weather Girls - It's Raining Men.mp3"
         },
         {
           "name": "Jump (Pointer Sisters)",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/The Pointer Sisters - Jump (For My Love).mp3"
+          "mp3File": "The Pointer Sisters - Jump (For My Love).mp3"
         },
         {
           "name": "I'm So Exited",
           "delay": 100,
-          "mp3FilePath": "../../assets/mp3/I'm So Exited.mp3"
+          "mp3File": "I'm So Exited.mp3"
         },
         {
           "name": "Always There",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/Incognito  -  Always There.mp3"
+          "mp3File": "Incognito  -  Always There.mp3"
         },
         {
           "name": "Sir Duke",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Sir Duke.mp3"
+          "mp3File": "Sir Duke.mp3"
         },
         {
           "name": "I've Got The Music In Me",
           "delay": 600,
-          "mp3FilePath": "../../assets/mp3/I've Got The Music In Me(40kb).mp3"
+          "mp3File": "I've Got The Music In Me(40kb).mp3"
         },
         {
           "name": "Nine To Five",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/Dolly Parton - Nine to Five.mp3"
+          "mp3File": "Dolly Parton - Nine to Five.mp3"
         },
         {
-          "name": "I Wanna Dance W. Som.",
+          "name": "I Wanna Dance With Somebody",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/Whitney Houston - I Wanna Dance With Somebody.mp3"
+          "mp3File": "Whitney Houston - I Wanna Dance With Somebody.mp3"
         },
         {
           "name": "I Wanna Dance verhoogd",
@@ -642,12 +645,12 @@
         {
           "name": "Voulez Vous Coucher",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/05 Labelle - Lady Marmalade.mp3"
+          "mp3File": "05 Labelle - Lady Marmalade.mp3"
         },
         {
           "name": "If You Don't Know Me",
           "delay": 300,
-          "mp3FilePath": "../../assets/mp3/If You Don't Know Me By Now.mp3"
+          "mp3File": "If You Don't Know Me By Now.mp3"
         },
         {
           "name": "Black Velvet",
@@ -660,9 +663,11 @@
         {
           "name": "Mercy",
           "delay": 1000,
-          "mp3FilePath": "../../assets/mp3/01 Mercy.mp3"
+          "mp3File": "01 Mercy.mp3"
         }
       ]
     }
-  ]
+  ],
+  "mp3FilePathRelative": "../../assets/mp3/",
+  "mp3FilePathAbsolute": "/Users/John/IdeaProjects/midi-librarian-application/ml-ui/src/assets/mp3"
 }
