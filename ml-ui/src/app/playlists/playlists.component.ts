@@ -127,14 +127,23 @@ export class PlayListsComponent implements OnInit {
     this.activePlayList.playListItems.forEach(playListItem => {playListItem.isActive = false;})
     this.activePlayListItem.isActive = true;
     this.activePlayListItem.isPlaying = true;
+    this.activePlayListItem.isError = false;
 
-    console.log('File ' + this.activePlayListItem.name + '.syx will be sent');
+    console.log('File ' + this.activePlayListItem.name + '.syx will tried to be sent');
     this.sendPlayListItem(this.activePlayListItem, this.activePlayList.path)
-    .pipe().subscribe( () => { console.log('File is sent'); this.activePlayListItem.isPlaying = false;} )
-
-    if (i < this.activePlayList.playListItems.length) {
-      this.setFocusedPlayListItem(i + 1);
-    }
+      .pipe().subscribe( (wasSent) => {
+          this.activePlayListItem.isPlaying = false;
+          if (wasSent) {
+            console.log('File is sent');
+          } else {
+            this.activePlayListItem.isError = true;
+            console.log('File is NOT sent');
+          }
+        }
+      )
+      if (i < this.activePlayList.playListItems.length) {
+        this.setFocusedPlayListItem(i + 1);
+      }
   }
 
   sendPlayListItem(playListItem: PlayListItem, filePath: string): Observable<any> {

@@ -20,19 +20,16 @@ public class FilePlayResource {
         Boolean result = false;
         String selectedOutputDevice = MidiCommon.getAvailableOutputDevice();
         try {
-            sendSysExFile(sendRequest.getSongName(),
-                    sendRequest.getPath(),
-                    selectedOutputDevice,
-                    sendRequest.getDelay());
-            result = true;
+            result = sendSysExFile(sendRequest, selectedOutputDevice);
         } catch (MidiUnavailableException e) {
             LOG.error("selectedOutputDevice: {} was not found.", selectedOutputDevice );
         }
         return result;
     }
 
-    private void sendSysExFile(String songName, String path, String selectedOutputDevice, Integer delay) throws MidiUnavailableException {
-        String fileName = path + songName + ".syx";
+    private boolean sendSysExFile(SendRequest sendRequest,String selectedOutputDevice) throws MidiUnavailableException {
+        boolean result = false;
+        String fileName = sendRequest.getPath() + sendRequest.getSongName() + ".syx";
         byte[] fileContent = MidiCommon.readSysExFile(fileName);
 
         LOG.info("selectedOutputDevice: " + selectedOutputDevice);
@@ -45,16 +42,18 @@ public class FilePlayResource {
                 Receiver receiver;
                 receiver = device.getReceiver();
                 long timeStamp = -1;
-                sendMessage(receiver, fileContent, timeStamp, delay);
+                result = sendMessage(receiver, fileContent, timeStamp, sendRequest.getDelay());
             } finally {
                 device.close();
             }
         } else {
             LOG.error("Midi device ({}) not available.", selectedOutputDevice);
         }
+        return result;
     }
 
-    private void sendMessage(Receiver receiver, byte[] fileContent, long timeStamp, long delayInMiliSeconds) {
+    private boolean sendMessage(Receiver receiver, byte[] fileContent, long timeStamp, long delayInMiliSeconds) {
+        boolean result = true;
         int eomValue = -9; // F7
         int posBegin = 0;
         int posEnd = 0;
@@ -74,14 +73,17 @@ public class FilePlayResource {
                     try {
                         Thread.sleep(delayInMiliSeconds);
                     } catch (InterruptedException e) {
+                        result = false;
                         LOG.warn("Unexpected interruption while sleeping {}", e);
                     }
                 } catch (InvalidMidiDataException e1) {
                     LOG.warn("Unexpected exception while sending midi message {}", e1);
+                    result = false;
                 }
             }
             ++posEnd;
         }
+        return result;
     }
 
 }

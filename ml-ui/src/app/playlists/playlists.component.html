@@ -43,7 +43,8 @@
         <span class="badge"><span class="tekst">{{playListItem.nr}}</span></span>
         <span *ngIf="playListItem?.hasFocus">&#9658;</span>
         <span class="tekst">{{playListItem.name}}</span>
-        <span *ngIf="playListItem?.isActive && !playListItem?.isPlaying"class="tekst"> &#x2705; </span>
+        <span *ngIf="playListItem?.isError && !playListItem?.isPlaying"class="tekst" style="color: red"> &#9888; </span>
+        <span *ngIf="playListItem?.isActive && !playListItem?.isPlaying&& !playListItem?.isError"class="tekst"> &#x2705; </span>
         <span *ngIf="playListItem?.isPlaying"class="tekst"> &#x231B; </span>
       </span>
       <span *ngIf="hasMp3(playListItem)"><button style="height:20px; position: absolute; left: 290px; top: 4px; width: 20px; background-color: #BBD8DC" (click)="playMp3(playListItem)"> <span style="position: relative; left: -5px; top: -5px">&#9835;</span> </button></span>

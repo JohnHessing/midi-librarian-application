@@ -23,6 +23,7 @@ export interface PlayListItem {
   delay: number;
   isActive: boolean;
   isPlaying: boolean;
+  isError: boolean;
   hasFocus: boolean;
   mp3File: string;
 }
