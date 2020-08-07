@@ -5,6 +5,11 @@
       "name": "Oefen lijst Kira",
       "playListItems": [
         {
+          "name": "Iron Lion Zion",
+          "delay": 1000,
+          "mp3File": "Bob Marley - Iron Lion Zion.mp3"
+        },
+        {
           "name": "I Love Your Smile",
           "delay": 1000,
           "mp3File": "19 I Love Your Smile.mp3"
@@ -54,7 +59,8 @@
         },
         {
           "name": "Disco Inferno",
-          "delay": 1000
+          "delay": 1000,
+          "mp3File": "The Trammps - Disco Inferno.mp3"
         },
         {
           "name": "Bad Girls",
@@ -148,7 +154,8 @@
         },
         {
           "name": "Disco Inferno",
-          "delay": 1000
+          "delay": 1000,
+          "mp3File": "The Trammps - Disco Inferno.mp3"
         },
         {
           "name": "Relight My Fire",
@@ -284,11 +291,8 @@
         },
         {
           "name": "Walking On Sunshine",
-          "delay": 100
-        },
-        {
-          "name": "As",
-          "delay": 0
+          "delay": 100,
+          "mp3File": "Katrina & The Waves - Walking On Sunshine (Official Video).mp3"
         },
         {
           "name": "Material Girl",
@@ -307,7 +311,8 @@
         },
         {
           "name": "Black Velvet",
-          "delay": 1000
+          "delay": 1000,
+          "mp3File": "Alannah Myles - Black Velvet (Official Video).mp3"
         },
         {
           "name": "Mercy",
@@ -453,10 +458,6 @@
           "mp3File": "05 Valerie (Feat. Amy Winehouse).mp3"
         },
         {
-          "name": "As",
-          "delay": 0
-        },
-        {
           "name": "Shame Shame Shame",
           "delay": 100,
           "mp3File": "01 Shame, Shame, Shame.mp3"
@@ -596,7 +597,8 @@
         },
         {
           "name": "Walking On Sunshine",
-          "delay": 100
+          "delay": 100,
+          "mp3File": "Katrina & The Waves - Walking On Sunshine (Official Video).mp3"
         },
         {
           "name": "It's Raining Men",
@@ -654,7 +656,8 @@
         },
         {
           "name": "Black Velvet",
-          "delay": 100
+          "delay": 100,
+          "mp3File": "Alannah Myles - Black Velvet (Official Video).mp3"
         },
         {
           "name": "Long Train Running",

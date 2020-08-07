@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Mp3PlayerComponent } from './mp3-player/mp3-player.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Mp3FinderComponent } from './mp3-finder/mp3-finder.component';
+import { SongFinderComponent } from './song-finder/song-finder.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { Mp3FinderComponent } from './mp3-finder/mp3-finder.component';
     PlayListEditorComponent,
     SongTextListenerComponent,
     Mp3PlayerComponent,
-    Mp3FinderComponent
+    Mp3FinderComponent,
+    SongFinderComponent
   ],
   imports: [
     BrowserModule,
