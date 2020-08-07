@@ -1,0 +1,19 @@
+<ng-template #rt let-r="result" let-t="term">
+  <div class="container-fluid" style="width: 800px">
+    <div class="row">
+      <div class="col-4 text-truncate active">
+        <ngb-highlight [result]="r.name" [term]="t"></ngb-highlight>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<div class="container pt-2">
+  <div class="input-group-prepend"><span class="input-group-text">Find song</span><br /></div>
+  <input [(ngModel)]="songTitle"
+         placeholder="song title"
+         (keydown)="onKeyDown($event)"
+         type="text"/>
+  <br />
+  <textarea *ngIf="searchedForSong" style="height: 500px; width: 175px; font-size: 0.7em">{{theFoundSongs}}</textarea>
+</div>
