@@ -47,7 +47,7 @@ export class SongFinderComponent implements OnInit {
         playList
           .playListItems
           .forEach(item => {
-            if (item.name.toLowerCase().indexOf(this.songTitle) !== -1) {
+            if (item.name.toLowerCase().indexOf(this.songTitle.toLowerCase()) !== -1) {
               this.foundSongs.push(
                 {
                   foundSongName: item.name,
